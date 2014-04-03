@@ -2,13 +2,13 @@ package org.baali.ksl;
 
 import javax.persistence.*;
 
-
+@Entity
 public class States
 {
-	
+	@Id
 	private int sid;
 	private String name;
-	private short isUnionTerritory;
+	private int isUnionTerritory;
 	
 	public int getSid()
 	{
@@ -26,11 +26,11 @@ public class States
 	{
 		this.name = name;
 	}
-	public short getIsUnionTerritory()
+	public int getIsUnionTerritory()
 	{
 		return isUnionTerritory;
 	}
-	public void setIsUnionTerritory(short isUnionTerritory)
+	public void setIsUnionTerritory(int isUnionTerritory)
 	{
 		this.isUnionTerritory = isUnionTerritory;
 	}
